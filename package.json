@@ -1,0 +1,16 @@
+{
+  "name": "day-5",
+  "version": "1.0.0",
+  "description": "Todo List App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aaron h. english <aaron.h.english@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.5",
+    "restify": "^4.3.0"
+  }
+}
