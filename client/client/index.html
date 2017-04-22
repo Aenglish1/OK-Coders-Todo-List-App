@@ -13,9 +13,14 @@
       function getTasks(){
         $.getJSON('/tasks/', function(result) {
           $.each(result, function(i, field){
-            $("#taskList").append("<li>" + field.task + "</li>");
-        })
-      })
+            var ldate = new Date(field.date)
+            $("#taskList").append("<a href='#' class='list-group-item'>" +
+              "<h4 class = 'list-group-item-heading'" +
+                "<span class ='glyphicon glyphicon-remove'></span>" +
+                  field.task + "</h4>" +
+                  "<p class='list-item-group-text'>" + ldate.toLocaleDateString() + "</p></a>");
+        });
+      });
     }
     $( document ).ready(function() {
       getTasks();
@@ -47,7 +52,7 @@
       </div>
     </div>
   </div>
-    <ul id="taskList">
-    </ul>
+    <div id="taskList" class="list-group">
+    </div>
   </body>
 </html>

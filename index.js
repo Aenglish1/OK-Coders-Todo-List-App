@@ -21,7 +21,8 @@ db.once('open', function() {
 
 server.get('/', client.get);
 server.get('/tasks', tasks.read);
-server.post('/tasks/:name', tasks.create);
+server.post('/tasks/:arg1', tasks.create);
+server.put('/tasks/:arg1', tasks.update);
 
 server.listen(port, function() {
   console.log('%s listening on %s', server.name, port);
