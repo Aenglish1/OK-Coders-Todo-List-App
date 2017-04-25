@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var server = restify.createServer();
 // server.use(restify.queryParser());
 
-cnost port = 8088;
+const port = 8088;
 const dbserver = 'mongodb://localhost/todo'
 
 var tasks = require('./routes/tasks');
