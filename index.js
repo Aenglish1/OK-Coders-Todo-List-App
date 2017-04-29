@@ -27,5 +27,5 @@ server.put('/tasks/:arg1', tasks.update);
 // server.post('/path/:arg1/:arg2', functionCall);
 
 server.listen(port, function() {
-  console.log('%s listening on %s', server.name, port);
+  console.log('%s listening on port %s', server.name, port);
 });
